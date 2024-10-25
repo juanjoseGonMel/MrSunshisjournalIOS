@@ -14,6 +14,13 @@
 		866C2D502CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 866C2D4E2CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld */; };
 		866C2D522CCB5C790057C80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866C2D512CCB5C790057C80E /* Assets.xcassets */; };
 		866C2D552CCB5C790057C80E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866C2D532CCB5C790057C80E /* LaunchScreen.storyboard */; };
+		866C2D5E2CCB5CB80057C80E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866C2D5D2CCB5CB70057C80E /* WebKit.framework */; };
+		866C2D602CCB5CC70057C80E /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866C2D5F2CCB5CC60057C80E /* Network.framework */; };
+		866C2D652CCB78950057C80E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C2D642CCB78950057C80E /* DataManager.swift */; };
+		866C2D672CCB9EC10057C80E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C2D662CCB9EC10057C80E /* SignInViewController.swift */; };
+		866C2D6B2CCB9FEF0057C80E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C2D6A2CCB9FEF0057C80E /* SignUpViewController.swift */; };
+		866C2D6D2CCBB2390057C80E /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C2D6C2CCBB2390057C80E /* CheckboxButton.swift */; };
+		866C2D6F2CCBB6850057C80E /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C2D6E2CCBB6850057C80E /* CircularButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		866C2D512CCB5C790057C80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		866C2D542CCB5C790057C80E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		866C2D562CCB5C790057C80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		866C2D5D2CCB5CB70057C80E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		866C2D5F2CCB5CC60057C80E /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		866C2D642CCB78950057C80E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		866C2D662CCB9EC10057C80E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		866C2D6A2CCB9FEF0057C80E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		866C2D6C2CCBB2390057C80E /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		866C2D6E2CCBB6850057C80E /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866C2D5E2CCB5CB80057C80E /* WebKit.framework in Frameworks */,
+				866C2D602CCB5CC70057C80E /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +60,7 @@
 			children = (
 				866C2D442CCB5C760057C80E /* MrSunshisjournal */,
 				866C2D432CCB5C760057C80E /* Products */,
+				866C2D5C2CCB5CB50057C80E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +75,62 @@
 		866C2D442CCB5C760057C80E /* MrSunshisjournal */ = {
 			isa = PBXGroup;
 			children = (
-				866C2D452CCB5C760057C80E /* AppDelegate.swift */,
-				866C2D472CCB5C760057C80E /* SceneDelegate.swift */,
-				866C2D492CCB5C760057C80E /* ViewController.swift */,
-				866C2D4B2CCB5C760057C80E /* Main.storyboard */,
+				866C2D632CCB5CFE0057C80E /* View */,
+				866C2D622CCB5CF60057C80E /* Model */,
+				866C2D612CCB5CE90057C80E /* Controller */,
 				866C2D512CCB5C790057C80E /* Assets.xcassets */,
-				866C2D532CCB5C790057C80E /* LaunchScreen.storyboard */,
 				866C2D562CCB5C790057C80E /* Info.plist */,
-				866C2D4E2CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld */,
 			);
 			path = MrSunshisjournal;
+			sourceTree = "<group>";
+		};
+		866C2D5C2CCB5CB50057C80E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				866C2D5F2CCB5CC60057C80E /* Network.framework */,
+				866C2D5D2CCB5CB70057C80E /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		866C2D612CCB5CE90057C80E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				866C2D452CCB5C760057C80E /* AppDelegate.swift */,
+				866C2D472CCB5C760057C80E /* SceneDelegate.swift */,
+				866C2D642CCB78950057C80E /* DataManager.swift */,
+				866C2D692CCB9EFB0057C80E /* VC */,
+				866C2D6C2CCBB2390057C80E /* CheckboxButton.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		866C2D622CCB5CF60057C80E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				866C2D4E2CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		866C2D632CCB5CFE0057C80E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				866C2D532CCB5C790057C80E /* LaunchScreen.storyboard */,
+				866C2D4B2CCB5C760057C80E /* Main.storyboard */,
+				866C2D6E2CCBB6850057C80E /* CircularButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		866C2D692CCB9EFB0057C80E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				866C2D492CCB5C760057C80E /* ViewController.swift */,
+				866C2D662CCB9EC10057C80E /* SignInViewController.swift */,
+				866C2D6A2CCB9FEF0057C80E /* SignUpViewController.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				866C2D502CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld in Sources */,
+				866C2D6B2CCB9FEF0057C80E /* SignUpViewController.swift in Sources */,
+				866C2D6D2CCBB2390057C80E /* CheckboxButton.swift in Sources */,
+				866C2D652CCB78950057C80E /* DataManager.swift in Sources */,
+				866C2D672CCB9EC10057C80E /* SignInViewController.swift in Sources */,
 				866C2D4A2CCB5C760057C80E /* ViewController.swift in Sources */,
 				866C2D462CCB5C760057C80E /* AppDelegate.swift in Sources */,
 				866C2D482CCB5C760057C80E /* SceneDelegate.swift in Sources */,
+				866C2D6F2CCBB6850057C80E /* CircularButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +362,7 @@
 				DEVELOPMENT_TEAM = VX96HPJ359;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MrSunshisjournal/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MrSunshisjournal;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,9 +375,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.HelloIOS.juan.MrSunshisjournal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,6 +394,7 @@
 				DEVELOPMENT_TEAM = VX96HPJ359;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MrSunshisjournal/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MrSunshisjournal;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,9 +407,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.developer.HelloIOS.juan.MrSunshisjournal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
