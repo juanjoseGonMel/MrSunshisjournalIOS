@@ -21,6 +21,13 @@
 		866C2D6B2CCB9FEF0057C80E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C2D6A2CCB9FEF0057C80E /* SignUpViewController.swift */; };
 		866C2D6D2CCBB2390057C80E /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C2D6C2CCBB2390057C80E /* CheckboxButton.swift */; };
 		866C2D6F2CCBB6850057C80E /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C2D6E2CCBB6850057C80E /* CircularButton.swift */; };
+		867FD5452D0A98E500F0590C /* ConfigMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FD5442D0A98E500F0590C /* ConfigMenuController.swift */; };
+		8686C07E2D015E3F00ADAF1F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686C07D2D015E3F00ADAF1F /* NotificationController.swift */; };
+		8686C0802D016CCC00ADAF1F /* UserConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686C07F2D016CCC00ADAF1F /* UserConfigController.swift */; };
+		86D4CF022D12A15C00223EFC /* ConfigModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF012D12A15C00223EFC /* ConfigModels.swift */; };
+		86D4CF142D13A4FF00223EFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86D4CF162D13A4FF00223EFC /* Localizable.strings */; };
+		86D4CF1A2D13D0DD00223EFC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF192D13D0DD00223EFC /* StringExtension.swift */; };
+		86D4CF1E2D1402B200223EFC /* ConfigViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF1D2D1402B200223EFC /* ConfigViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +47,16 @@
 		866C2D6A2CCB9FEF0057C80E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		866C2D6C2CCBB2390057C80E /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
 		866C2D6E2CCBB6850057C80E /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
+		867FD5442D0A98E500F0590C /* ConfigMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigMenuController.swift; sourceTree = "<group>"; };
+		8686C07D2D015E3F00ADAF1F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8686C07F2D016CCC00ADAF1F /* UserConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigController.swift; sourceTree = "<group>"; };
+		86D4CF012D12A15C00223EFC /* ConfigModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigModels.swift; sourceTree = "<group>"; };
+		86D4CF122D13A4A900223EFC /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		86D4CF132D13A4A900223EFC /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		86D4CF152D13A4FF00223EFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		86D4CF172D13A50600223EFC /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		86D4CF192D13D0DD00223EFC /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		86D4CF1D2D1402B200223EFC /* ConfigViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +92,11 @@
 		866C2D442CCB5C760057C80E /* MrSunshisjournal */ = {
 			isa = PBXGroup;
 			children = (
+				866C2D612CCB5CE90057C80E /* Controller */,
 				866C2D632CCB5CFE0057C80E /* View */,
 				866C2D622CCB5CF60057C80E /* Model */,
-				866C2D612CCB5CE90057C80E /* Controller */,
+				86D4CF0D2D13A37B00223EFC /* Localization */,
+				86D4CF182D13CFF900223EFC /* Extensions */,
 				866C2D512CCB5C790057C80E /* Assets.xcassets */,
 				866C2D562CCB5C790057C80E /* Info.plist */,
 			);
@@ -100,7 +119,6 @@
 				866C2D472CCB5C760057C80E /* SceneDelegate.swift */,
 				866C2D642CCB78950057C80E /* DataManager.swift */,
 				866C2D692CCB9EFB0057C80E /* VC */,
-				866C2D6C2CCBB2390057C80E /* CheckboxButton.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -109,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				866C2D4E2CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld */,
+				86D4CF012D12A15C00223EFC /* ConfigModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +138,8 @@
 				866C2D532CCB5C790057C80E /* LaunchScreen.storyboard */,
 				866C2D4B2CCB5C760057C80E /* Main.storyboard */,
 				866C2D6E2CCBB6850057C80E /* CircularButton.swift */,
+				866C2D6C2CCBB2390057C80E /* CheckboxButton.swift */,
+				86D4CF1D2D1402B200223EFC /* ConfigViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,8 +150,27 @@
 				866C2D492CCB5C760057C80E /* ViewController.swift */,
 				866C2D662CCB9EC10057C80E /* SignInViewController.swift */,
 				866C2D6A2CCB9FEF0057C80E /* SignUpViewController.swift */,
+				8686C07D2D015E3F00ADAF1F /* NotificationController.swift */,
+				8686C07F2D016CCC00ADAF1F /* UserConfigController.swift */,
+				867FD5442D0A98E500F0590C /* ConfigMenuController.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		86D4CF0D2D13A37B00223EFC /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				86D4CF162D13A4FF00223EFC /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		86D4CF182D13CFF900223EFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86D4CF192D13D0DD00223EFC /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +215,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = 866C2D392CCB5C750057C80E;
 			productRefGroup = 866C2D432CCB5C760057C80E /* Products */;
@@ -192,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				866C2D552CCB5C790057C80E /* LaunchScreen.storyboard in Resources */,
+				86D4CF142D13A4FF00223EFC /* Localizable.strings in Resources */,
 				866C2D522CCB5C790057C80E /* Assets.xcassets in Resources */,
 				866C2D4D2CCB5C760057C80E /* Main.storyboard in Resources */,
 			);
@@ -204,14 +246,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D4CF1E2D1402B200223EFC /* ConfigViewCell.swift in Sources */,
+				867FD5452D0A98E500F0590C /* ConfigMenuController.swift in Sources */,
+				8686C0802D016CCC00ADAF1F /* UserConfigController.swift in Sources */,
+				8686C07E2D015E3F00ADAF1F /* NotificationController.swift in Sources */,
 				866C2D502CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld in Sources */,
 				866C2D6B2CCB9FEF0057C80E /* SignUpViewController.swift in Sources */,
 				866C2D6D2CCBB2390057C80E /* CheckboxButton.swift in Sources */,
 				866C2D652CCB78950057C80E /* DataManager.swift in Sources */,
 				866C2D672CCB9EC10057C80E /* SignInViewController.swift in Sources */,
+				86D4CF1A2D13D0DD00223EFC /* StringExtension.swift in Sources */,
 				866C2D4A2CCB5C760057C80E /* ViewController.swift in Sources */,
 				866C2D462CCB5C760057C80E /* AppDelegate.swift in Sources */,
 				866C2D482CCB5C760057C80E /* SceneDelegate.swift in Sources */,
+				86D4CF022D12A15C00223EFC /* ConfigModels.swift in Sources */,
 				866C2D6F2CCBB6850057C80E /* CircularButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +271,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				866C2D4C2CCB5C760057C80E /* Base */,
+				86D4CF132D13A4A900223EFC /* es-419 */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -231,8 +280,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				866C2D542CCB5C790057C80E /* Base */,
+				86D4CF122D13A4A900223EFC /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		86D4CF162D13A4FF00223EFC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86D4CF152D13A4FF00223EFC /* en */,
+				86D4CF172D13A50600223EFC /* es-419 */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -242,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -302,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -366,8 +427,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,8 +460,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
