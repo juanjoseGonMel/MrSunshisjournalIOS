@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MrSunshisjournal
+
+  Created by DISMOV on 18/12/24.
+  
+*/
+
+
+"Perfil" = "Profile";
+"Contraseña" = "Password";
+"Preferencias" = "Preferences";
+"Notificaciones" = "Notifications";
+"Acerca de" = "About";
+"Cerrar sesion" = "Log Out";
