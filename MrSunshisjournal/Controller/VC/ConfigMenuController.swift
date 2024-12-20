@@ -34,7 +34,7 @@ class ConfigMenuController: UIViewController, UITableViewDataSource, UITableView
         // Configurar los datos
         configCells = [
             ConfigItem(title: "Perfil".localized, segueIdentifier: "showPerfilSettings"),
-            ConfigItem(title: "Contraseña".localized, segueIdentifier: "showSeguridadSettings"),
+            ConfigItem(title: "Seguridad".localized, segueIdentifier: "showSeguridadSettings"),
             ConfigItem(title: "Preferencias".localized, segueIdentifier: "showPreferenciasSettings"),
             ConfigItem(title: "Notificaciones".localized, segueIdentifier: "showNotificacionesSettings"),
             ConfigItem(title: "Acerca de".localized, segueIdentifier: "showInfoSettings"),

@@ -28,6 +28,8 @@
 		86D4CF142D13A4FF00223EFC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86D4CF162D13A4FF00223EFC /* Localizable.strings */; };
 		86D4CF1A2D13D0DD00223EFC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF192D13D0DD00223EFC /* StringExtension.swift */; };
 		86D4CF1E2D1402B200223EFC /* ConfigViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF1D2D1402B200223EFC /* ConfigViewCell.swift */; };
+		86D4CF212D14119900223EFC /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF202D14119900223EFC /* PerfilController.swift */; };
+		86D4CF232D15676200223EFC /* MrSunshineJournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF222D15676200223EFC /* MrSunshineJournalController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		86D4CF172D13A50600223EFC /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		86D4CF192D13D0DD00223EFC /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		86D4CF1D2D1402B200223EFC /* ConfigViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewCell.swift; sourceTree = "<group>"; };
+		86D4CF202D14119900223EFC /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
+		86D4CF222D15676200223EFC /* MrSunshineJournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrSunshineJournalController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 				8686C07D2D015E3F00ADAF1F /* NotificationController.swift */,
 				8686C07F2D016CCC00ADAF1F /* UserConfigController.swift */,
 				867FD5442D0A98E500F0590C /* ConfigMenuController.swift */,
+				86D4CF1F2D140DE300223EFC /* ConfigControllers */,
+				86D4CF222D15676200223EFC /* MrSunshineJournalController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -171,6 +177,14 @@
 				86D4CF192D13D0DD00223EFC /* StringExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86D4CF1F2D140DE300223EFC /* ConfigControllers */ = {
+			isa = PBXGroup;
+			children = (
+				86D4CF202D14119900223EFC /* PerfilController.swift */,
+			);
+			path = ConfigControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +267,7 @@
 				866C2D502CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld in Sources */,
 				866C2D6B2CCB9FEF0057C80E /* SignUpViewController.swift in Sources */,
 				866C2D6D2CCBB2390057C80E /* CheckboxButton.swift in Sources */,
+				86D4CF212D14119900223EFC /* PerfilController.swift in Sources */,
 				866C2D652CCB78950057C80E /* DataManager.swift in Sources */,
 				866C2D672CCB9EC10057C80E /* SignInViewController.swift in Sources */,
 				86D4CF1A2D13D0DD00223EFC /* StringExtension.swift in Sources */,
@@ -260,6 +275,7 @@
 				866C2D462CCB5C760057C80E /* AppDelegate.swift in Sources */,
 				866C2D482CCB5C760057C80E /* SceneDelegate.swift in Sources */,
 				86D4CF022D12A15C00223EFC /* ConfigModels.swift in Sources */,
+				86D4CF232D15676200223EFC /* MrSunshineJournalController.swift in Sources */,
 				866C2D6F2CCBB6850057C80E /* CircularButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
