@@ -31,6 +31,7 @@
 		86D4CF212D14119900223EFC /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF202D14119900223EFC /* PerfilController.swift */; };
 		86D4CF232D15676200223EFC /* MrSunshineJournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF222D15676200223EFC /* MrSunshineJournalController.swift */; };
 		86D4CF252D168B0C00223EFC /* PetsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF242D168B0C00223EFC /* PetsViewCell.swift */; };
+		86D4CF282D16B0EF00223EFC /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 86D4CF272D16B0EF00223EFC /* FSCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				866C2D5E2CCB5CB80057C80E /* WebKit.framework in Frameworks */,
+				86D4CF282D16B0EF00223EFC /* FSCalendar in Frameworks */,
 				866C2D602CCB5CC70057C80E /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +208,9 @@
 			dependencies = (
 			);
 			name = MrSunshisjournal;
+			packageProductDependencies = (
+				86D4CF272D16B0EF00223EFC /* FSCalendar */,
+			);
 			productName = MrSunshisjournal;
 			productReference = 866C2D422CCB5C760057C80E /* MrSunshisjournal.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +240,9 @@
 				"es-419",
 			);
 			mainGroup = 866C2D392CCB5C750057C80E;
+			packageReferences = (
+				86D4CF262D16B0EF00223EFC /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 866C2D432CCB5C760057C80E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -521,6 +529,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86D4CF262D16B0EF00223EFC /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86D4CF272D16B0EF00223EFC /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D4CF262D16B0EF00223EFC /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		866C2D4E2CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld */ = {
