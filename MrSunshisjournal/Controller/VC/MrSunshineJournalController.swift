@@ -11,6 +11,7 @@ class MrSunshineJournalController: UIViewController {
 
     
     
+    @IBOutlet var fondo: UIImageView!
     
     @IBOutlet var habitatCollection: UICollectionView!
     @IBOutlet var petsTableView: UITableView!
@@ -24,6 +25,14 @@ class MrSunshineJournalController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
+        // Configurar la imagen de fondo
+        fondo.image = UIImage(named: "fondoclaro")
+        fondo.contentMode = .scaleAspectFill
+        fondo.clipsToBounds = true
         
         
         // En caso de hacer delegate
@@ -86,7 +95,8 @@ extension MrSunshineJournalController : UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "petsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "petsCell", for: indexPath) as! PetsViewCell
+        
         cell.textLabel?.text = verticalItems[indexPath.row]
         return cell
         
