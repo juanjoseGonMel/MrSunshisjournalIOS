@@ -32,6 +32,22 @@
 		86D4CF232D15676200223EFC /* MrSunshineJournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF222D15676200223EFC /* MrSunshineJournalController.swift */; };
 		86D4CF252D168B0C00223EFC /* PetsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CF242D168B0C00223EFC /* PetsViewCell.swift */; };
 		86D4CF282D16B0EF00223EFC /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 86D4CF272D16B0EF00223EFC /* FSCalendar */; };
+		86D4CFD42D18104400223EFC /* Petcomida+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFC42D18104400223EFC /* Petcomida+CoreDataClass.swift */; };
+		86D4CFD52D18104400223EFC /* Petcomida+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFC52D18104400223EFC /* Petcomida+CoreDataProperties.swift */; };
+		86D4CFD62D18104400223EFC /* PetMedicalHistory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFC62D18104400223EFC /* PetMedicalHistory+CoreDataClass.swift */; };
+		86D4CFD72D18104400223EFC /* PetMedicalHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFC72D18104400223EFC /* PetMedicalHistory+CoreDataProperties.swift */; };
+		86D4CFD82D18104400223EFC /* Petcredentials+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFC82D18104400223EFC /* Petcredentials+CoreDataClass.swift */; };
+		86D4CFD92D18104400223EFC /* Petcredentials+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFC92D18104400223EFC /* Petcredentials+CoreDataProperties.swift */; };
+		86D4CFDA2D18104400223EFC /* Petcitaotro+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFCA2D18104400223EFC /* Petcitaotro+CoreDataClass.swift */; };
+		86D4CFDB2D18104400223EFC /* Petcitaotro+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFCB2D18104400223EFC /* Petcitaotro+CoreDataProperties.swift */; };
+		86D4CFDC2D18104400223EFC /* Pethabitat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFCC2D18104400223EFC /* Pethabitat+CoreDataClass.swift */; };
+		86D4CFDD2D18104400223EFC /* Pethabitat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFCD2D18104400223EFC /* Pethabitat+CoreDataProperties.swift */; };
+		86D4CFDE2D18104400223EFC /* Petactividad+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFCE2D18104400223EFC /* Petactividad+CoreDataClass.swift */; };
+		86D4CFDF2D18104400223EFC /* Petactividad+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFCF2D18104400223EFC /* Petactividad+CoreDataProperties.swift */; };
+		86D4CFE02D18104400223EFC /* PetSanidad+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFD02D18104400223EFC /* PetSanidad+CoreDataClass.swift */; };
+		86D4CFE12D18104400223EFC /* PetSanidad+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFD12D18104400223EFC /* PetSanidad+CoreDataProperties.swift */; };
+		86D4CFE22D18104400223EFC /* Petmascota+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFD22D18104400223EFC /* Petmascota+CoreDataClass.swift */; };
+		86D4CFE32D18104400223EFC /* Petmascota+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4CFD32D18104400223EFC /* Petmascota+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +80,22 @@
 		86D4CF202D14119900223EFC /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
 		86D4CF222D15676200223EFC /* MrSunshineJournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrSunshineJournalController.swift; sourceTree = "<group>"; };
 		86D4CF242D168B0C00223EFC /* PetsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewCell.swift; sourceTree = "<group>"; };
+		86D4CFC42D18104400223EFC /* Petcomida+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petcomida+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86D4CFC52D18104400223EFC /* Petcomida+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petcomida+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		86D4CFC62D18104400223EFC /* PetMedicalHistory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetMedicalHistory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86D4CFC72D18104400223EFC /* PetMedicalHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetMedicalHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		86D4CFC82D18104400223EFC /* Petcredentials+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petcredentials+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86D4CFC92D18104400223EFC /* Petcredentials+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petcredentials+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		86D4CFCA2D18104400223EFC /* Petcitaotro+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petcitaotro+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86D4CFCB2D18104400223EFC /* Petcitaotro+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petcitaotro+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		86D4CFCC2D18104400223EFC /* Pethabitat+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pethabitat+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86D4CFCD2D18104400223EFC /* Pethabitat+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pethabitat+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		86D4CFCE2D18104400223EFC /* Petactividad+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petactividad+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86D4CFCF2D18104400223EFC /* Petactividad+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petactividad+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		86D4CFD02D18104400223EFC /* PetSanidad+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetSanidad+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86D4CFD12D18104400223EFC /* PetSanidad+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PetSanidad+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		86D4CFD22D18104400223EFC /* Petmascota+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petmascota+CoreDataClass.swift"; sourceTree = "<group>"; };
+		86D4CFD32D18104400223EFC /* Petmascota+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Petmascota+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +166,7 @@
 		866C2D622CCB5CF60057C80E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				86D4CF492D1804DE00223EFC /* CoreData */,
 				866C2D4E2CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld */,
 				86D4CF012D12A15C00223EFC /* ConfigModels.swift */,
 			);
@@ -190,6 +223,29 @@
 				86D4CF202D14119900223EFC /* PerfilController.swift */,
 			);
 			path = ConfigControllers;
+			sourceTree = "<group>";
+		};
+		86D4CF492D1804DE00223EFC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				86D4CFC42D18104400223EFC /* Petcomida+CoreDataClass.swift */,
+				86D4CFC52D18104400223EFC /* Petcomida+CoreDataProperties.swift */,
+				86D4CFC62D18104400223EFC /* PetMedicalHistory+CoreDataClass.swift */,
+				86D4CFC72D18104400223EFC /* PetMedicalHistory+CoreDataProperties.swift */,
+				86D4CFC82D18104400223EFC /* Petcredentials+CoreDataClass.swift */,
+				86D4CFC92D18104400223EFC /* Petcredentials+CoreDataProperties.swift */,
+				86D4CFCA2D18104400223EFC /* Petcitaotro+CoreDataClass.swift */,
+				86D4CFCB2D18104400223EFC /* Petcitaotro+CoreDataProperties.swift */,
+				86D4CFCC2D18104400223EFC /* Pethabitat+CoreDataClass.swift */,
+				86D4CFCD2D18104400223EFC /* Pethabitat+CoreDataProperties.swift */,
+				86D4CFCE2D18104400223EFC /* Petactividad+CoreDataClass.swift */,
+				86D4CFCF2D18104400223EFC /* Petactividad+CoreDataProperties.swift */,
+				86D4CFD02D18104400223EFC /* PetSanidad+CoreDataClass.swift */,
+				86D4CFD12D18104400223EFC /* PetSanidad+CoreDataProperties.swift */,
+				86D4CFD22D18104400223EFC /* Petmascota+CoreDataClass.swift */,
+				86D4CFD32D18104400223EFC /* Petmascota+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,14 +327,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D4CFE02D18104400223EFC /* PetSanidad+CoreDataClass.swift in Sources */,
+				86D4CFE22D18104400223EFC /* Petmascota+CoreDataClass.swift in Sources */,
+				86D4CFD62D18104400223EFC /* PetMedicalHistory+CoreDataClass.swift in Sources */,
+				86D4CFDC2D18104400223EFC /* Pethabitat+CoreDataClass.swift in Sources */,
 				86D4CF1E2D1402B200223EFC /* ConfigViewCell.swift in Sources */,
 				867FD5452D0A98E500F0590C /* ConfigMenuController.swift in Sources */,
+				86D4CFDE2D18104400223EFC /* Petactividad+CoreDataClass.swift in Sources */,
+				86D4CFE12D18104400223EFC /* PetSanidad+CoreDataProperties.swift in Sources */,
 				8686C0802D016CCC00ADAF1F /* UserConfigController.swift in Sources */,
+				86D4CFD92D18104400223EFC /* Petcredentials+CoreDataProperties.swift in Sources */,
+				86D4CFDF2D18104400223EFC /* Petactividad+CoreDataProperties.swift in Sources */,
 				8686C07E2D015E3F00ADAF1F /* NotificationController.swift in Sources */,
 				866C2D502CCB5C760057C80E /* MrSunshisjournal.xcdatamodeld in Sources */,
 				866C2D6B2CCB9FEF0057C80E /* SignUpViewController.swift in Sources */,
 				866C2D6D2CCBB2390057C80E /* CheckboxButton.swift in Sources */,
 				86D4CF212D14119900223EFC /* PerfilController.swift in Sources */,
+				86D4CFE32D18104400223EFC /* Petmascota+CoreDataProperties.swift in Sources */,
+				86D4CFDD2D18104400223EFC /* Pethabitat+CoreDataProperties.swift in Sources */,
+				86D4CFD42D18104400223EFC /* Petcomida+CoreDataClass.swift in Sources */,
 				866C2D652CCB78950057C80E /* DataManager.swift in Sources */,
 				866C2D672CCB9EC10057C80E /* SignInViewController.swift in Sources */,
 				86D4CF1A2D13D0DD00223EFC /* StringExtension.swift in Sources */,
@@ -286,8 +353,13 @@
 				86D4CF252D168B0C00223EFC /* PetsViewCell.swift in Sources */,
 				866C2D462CCB5C760057C80E /* AppDelegate.swift in Sources */,
 				866C2D482CCB5C760057C80E /* SceneDelegate.swift in Sources */,
+				86D4CFDA2D18104400223EFC /* Petcitaotro+CoreDataClass.swift in Sources */,
 				86D4CF022D12A15C00223EFC /* ConfigModels.swift in Sources */,
+				86D4CFD82D18104400223EFC /* Petcredentials+CoreDataClass.swift in Sources */,
+				86D4CFD72D18104400223EFC /* PetMedicalHistory+CoreDataProperties.swift in Sources */,
+				86D4CFDB2D18104400223EFC /* Petcitaotro+CoreDataProperties.swift in Sources */,
 				86D4CF232D15676200223EFC /* MrSunshineJournalController.swift in Sources */,
+				86D4CFD52D18104400223EFC /* Petcomida+CoreDataProperties.swift in Sources */,
 				866C2D6F2CCBB6850057C80E /* CircularButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,4 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Petactividad" representedClassName="Petactividad" syncable="YES" codeGenerationType="class">
+        <attribute name="datefinish" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateinit" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tipo" optional="YES" attributeType="String"/>
+        <relationship name="cita" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Petcitaotro" inverseName="actividad" inverseEntity="Petcitaotro"/>
+        <relationship name="comida" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Petcomida" inverseName="actividad" inverseEntity="Petcomida"/>
+        <relationship name="mascota" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Petmascota" inverseName="actividades" inverseEntity="Petmascota"/>
+        <relationship name="sanidad" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PetSanidad" inverseName="sanidad" inverseEntity="PetSanidad"/>
+    </entity>
+    <entity name="Petcitaotro" representedClassName="Petcitaotro" syncable="YES" codeGenerationType="class">
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <relationship name="actividad" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Petactividad" inverseName="cita" inverseEntity="Petactividad"/>
+    </entity>
+    <entity name="Petcomida" representedClassName="Petcomida" syncable="YES" codeGenerationType="class">
+        <attribute name="cantidad" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <relationship name="actividad" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Petactividad" inverseName="comida" inverseEntity="Petactividad"/>
+    </entity>
+    <entity name="Petcredentials" representedClassName="Petcredentials" syncable="YES" codeGenerationType="class">
+        <attribute name="foliolicencia" optional="YES" attributeType="String"/>
+        <attribute name="vetename" optional="YES" attributeType="String"/>
+        <relationship name="mascota" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Petmascota" inverseName="credencial" inverseEntity="Petmascota"/>
+    </entity>
+    <entity name="Pethabitat" representedClassName="Pethabitat" syncable="YES" codeGenerationType="class">
+        <attribute name="acceso" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="capacidad" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="size" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="temp" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="tipo" optional="YES" attributeType="String"/>
+        <relationship name="mascotas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Petmascota" inverseName="habitat" inverseEntity="Petmascota"/>
+    </entity>
+    <entity name="Petmascota" representedClassName="Petmascota" syncable="YES" codeGenerationType="class">
+        <attribute name="born" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="comidafav" optional="YES" attributeType="String"/>
+        <attribute name="cumple" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="esteril" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="genero" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="pesoactual" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="raza" optional="YES" attributeType="String"/>
+        <attribute name="razacien" optional="YES" attributeType="String"/>
+        <relationship name="actividades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Petactividad" inverseName="mascota" inverseEntity="Petactividad"/>
+        <relationship name="credencial" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Petcredentials" inverseName="mascota" inverseEntity="Petcredentials"/>
+        <relationship name="habitat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pethabitat" inverseName="mascotas" inverseEntity="Pethabitat"/>
+        <relationship name="medical" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PetMedicalHistory" inverseName="mascota" inverseEntity="PetMedicalHistory"/>
+    </entity>
+    <entity name="PetMedicalHistory" representedClassName="PetMedicalHistory" syncable="YES" codeGenerationType="class">
+        <attribute name="fechavacuna" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="mota" optional="YES" attributeType="String"/>
+        <attribute name="vacuna" optional="YES" attributeType="String"/>
+        <relationship name="mascota" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Petmascota" inverseName="medical" inverseEntity="Petmascota"/>
+    </entity>
+    <entity name="PetSanidad" representedClassName="PetSanidad" syncable="YES" codeGenerationType="class">
+        <attribute name="tipo" optional="YES" attributeType="String"/>
+        <relationship name="sanidad" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Petactividad" inverseName="sanidad" inverseEntity="Petactividad"/>
+    </entity>
 </model>
