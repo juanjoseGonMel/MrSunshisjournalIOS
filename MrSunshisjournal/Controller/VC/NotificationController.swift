@@ -15,7 +15,7 @@ class NotificationController: UIViewController {
     @IBOutlet var activityCalendary: FSCalendar!
     @IBOutlet var activityTable: UITableView!
     
-    
+    @IBOutlet var btnAddActivity: UIBarButtonItem!
     
     
     

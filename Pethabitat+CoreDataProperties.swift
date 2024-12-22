@@ -16,12 +16,12 @@ extension Pethabitat {
         return NSFetchRequest<Pethabitat>(entityName: "Pethabitat")
     }
 
-    @NSManaged public var tipo: String?
+    @NSManaged public var acceso: Bool
+    @NSManaged public var capacidad: Int16
+    @NSManaged public var descripcion: String?
     @NSManaged public var size: Float
     @NSManaged public var temp: Float
-    @NSManaged public var acceso: Bool
-    @NSManaged public var descripcion: String?
-    @NSManaged public var capacidad: Int16
+    @NSManaged public var tipo: String?
     @NSManaged public var mascotas: NSSet?
 
 }

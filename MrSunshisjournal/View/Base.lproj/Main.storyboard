@@ -492,6 +492,7 @@
                     <connections>
                         <outlet property="activityCalendary" destination="mUT-gD-z69" id="QbP-Ns-Zhz"/>
                         <outlet property="activityTable" destination="gUT-y7-ZPc" id="GUL-fF-t04"/>
+                        <outlet property="btnAddActivity" destination="lda-Hi-MqN" id="eBS-7m-zZq"/>
                         <outlet property="fondo" destination="QU2-uE-Zea" id="yQR-do-KOj"/>
                     </connections>
                 </viewController>
@@ -612,6 +613,10 @@
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PA6-de-aYn">
                                                     <rect key="frame" x="25" y="188" width="323" height="220"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="220" id="8l2-vk-3ls"/>
+                                                        <constraint firstAttribute="width" constant="323" id="xXd-dA-ZY6"/>
+                                                    </constraints>
                                                     <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bt2-Lq-ez1">
                                                         <size key="itemSize" width="128" height="128"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
